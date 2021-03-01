@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Game-Control';
+  oddNumber:number[]=[];
+  evenNumber:number[]=[];
+
+  onFirefunAppC(lastNum:number){
+    if (lastNum %2 ==0){
+      this.evenNumber.push(lastNum);
+    }else{
+      this.oddNumber.push(lastNum);
+    }
+
+  }
 }
